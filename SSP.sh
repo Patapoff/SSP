@@ -166,8 +166,6 @@ permissoes()
 	esac
 }
 
-se
-
 modificarDono()
 {
 clear
@@ -364,7 +362,6 @@ clear
 			e) exit ;;
 			*) "Opção desconhecida." ; echo ; modificarPermissoes ;;
 		esac 
-	fi	
 	fi
 
 	echo "Diretório/Arquivo não encontrado!"
