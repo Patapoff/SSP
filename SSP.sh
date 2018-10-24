@@ -362,7 +362,7 @@ clear
 			e) exit ;;
 			*) "Opção desconhecida." ; echo ; modificarPermissoes ;;
 		esac 
-	fi
+	fi	
 
 	echo "Diretório/Arquivo não encontrado!"
 	echo
@@ -398,13 +398,13 @@ clear
 	
 	case $opcaoPermissoes in
 		a) chmod u-rwx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		b) chmod u+x $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		c) chmod u+w $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		d) chmod u+r $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		e) chmod u+wx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		f) chmod u+rx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		g) chmod u+rw $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		h) chmod u+rwx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		b) chmod u-rwx $nomePastaDir ; chmod u+x $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		c) chmod u-rwx $nomePastaDir ; chmod u+w $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		d) chmod u-rwx $nomePastaDir ; chmod u+r $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		e) chmod u-rwx $nomePastaDir ; chmod u+wx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		f) chmod u-rwx $nomePastaDir ; chmod u+rx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		g) chmod u-rwx $nomePastaDir ; chmod u+rw $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		h) chmod u-rwx $nomePastaDir ; chmod u+rwx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
 		i) modificarPermissoes ;;
 		j) exit ;;
 		*) "Opção desconhecida." ; echo ; permissoesDono ;;
@@ -437,13 +437,13 @@ clear
 	
 	case $opcaoPermissoes in
 		a) chmod g-rwx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		b) chmod g+x $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		c) chmod g+w $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		d) chmod g+r $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		e) chmod g+wx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		f) chmod g+rx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		g) chmod g+rw $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		h) chmod g+rwx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		b) chmod g-rwx $nomePastaDir ; chmod g+x $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		c) chmod g-rwx $nomePastaDir ; chmod g+w $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		d) chmod g-rwx $nomePastaDir ; chmod g+r $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		e) chmod g-rwx $nomePastaDir ; chmod g+wx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		f) chmod g-rwx $nomePastaDir ; chmod g+rx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		g) chmod g-rwx $nomePastaDir ; chmod g+rw $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		h) chmod g-rwx $nomePastaDir ; chmod g+rwx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
 		i) modificarPermissoes ;;
 		j) exit ;;
 		*) "Opção desconhecida." ; echo ; permissoesGrupo ;;
@@ -476,13 +476,13 @@ clear
 	
 	case $opcaoPermissoes in
 		a) chmod o-rwx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		b) chmod o+x $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		c) chmod o+w $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		d) chmod o+r $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		e) chmod o+wx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		f) chmod o+rx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		g) chmod o+rw $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
-		h) chmod o+rwx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		b) chmod o-rwx $nomePastaDir ; chmod o+x $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		c) chmod o-rwx $nomePastaDir ; chmod o+w $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		d) chmod o-rwx $nomePastaDir ; chmod o+r $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		e) chmod o-rwx $nomePastaDir ; chmod o+wx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		f) chmod o-rwx $nomePastaDir ; chmod o+rx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		g) chmod o-rwx $nomePastaDir ; chmod o+rw $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
+		h) chmod o-rwx $nomePastaDir ; chmod o+rwx $nomePastaDir ; echo "Permissões alteradas com sucesso!" ; echo ; echo ; echo "Pressione qualquer botão para continuar!" ; echo ; read ; permissoes ;;
 		i) modificarPermissoes ;;
 		j) exit ;;
 		*) "Opção desconhecida." ; echo ; permissoesOutros ;;
